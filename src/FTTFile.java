@@ -10,7 +10,7 @@ public class FTTFile {
 			PrintWriter writer = new PrintWriter("jdados.csv", "UTF-8");
 			int contador = 0;
 			do {
-				writer.println(contador +";" + rn.nextInt() + ";" + rn.nextFloat());
+				writer.println(contador +";" + rn.nextInt() + ";" + (String.valueOf(rn.nextFloat())).replace('.',','));
 				contador++;
 			} while (contador < 100);
 
